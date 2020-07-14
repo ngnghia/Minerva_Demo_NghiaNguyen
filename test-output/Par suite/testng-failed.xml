@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Par suite]" parallel="none">
+  <parameter name="appURL" value="http://qa-minerva:minerva@par.minerva.vn/"/>
+  <parameter name="browserType" value="firefox"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="System test(failed)" parallel="none">
+    <classes>
+      <class name="TestScripts.HomeTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="quitBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestScripts.HomeTest -->
+      <class name="TestScripts.Checkout.CheckOutSuccessful_AllFields">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestScripts.Checkout.CheckOutSuccessful_AllFields -->
+      <class name="TestScripts.Checkout.CheckOutTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="verify_ProductInforBeforeSubmit"/>
+        </methods>
+      </class> <!-- TestScripts.Checkout.CheckOutTest -->
+      <class name="TestScripts.InformationTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="verify_CustomerInfor"/>
+        </methods>
+      </class> <!-- TestScripts.InformationTest -->
+      <class name="TestScripts.Checkout.CheckOutSuccessful_OnlyReruiredFields">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- TestScripts.Checkout.CheckOutSuccessful_OnlyReruiredFields -->
+      <class name="TestScripts.ProductDetailTest">
+        <methods>
+          <include name="verify_ProductPrice"/>
+          <include name="verify_ProductRating"/>
+          <include name="closeBrowser"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="setUp"/>
+          <include name="verify_ProductReview"/>
+        </methods>
+      </class> <!-- TestScripts.ProductDetailTest -->
+    </classes>
+  </test> <!-- System test(failed) -->
+</suite> <!-- Failed suite [Par suite] -->

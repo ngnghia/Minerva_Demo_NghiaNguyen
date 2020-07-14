@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Par suite" parallel="none">
+<parameter name="appURL" value="http://qa-minerva:minerva@par.minerva.vn/"/>
+<parameter name="browserType" value="firefox"/>
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  
+  <test name="System test">
+    <classes>
+      <class name="TestScripts.HomeTest"/>
+      <class name="TestScripts.ProductDetailTest"/>
+      <class name="TestScripts.Checkout.CheckOutTest"/>
+      <class name="TestScripts.Checkout.CheckOutSuccessful_AllFields"/>
+      <class name="TestScripts.Checkout.CheckOutSuccessful_OnlyReruiredFields"/>
+      <class name="TestScripts.InformationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

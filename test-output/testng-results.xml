@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" total="12" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Par suite" duration-ms="97334" started-at="2020-07-14T07:19:00Z" finished-at="2020-07-14T07:20:37Z">
+    <groups>
+    </groups>
+    <test name="System test" duration-ms="97334" started-at="2020-07-14T07:19:00Z" finished-at="2020-07-14T07:20:37Z">
+      <class name="TestScripts.ProductDetailTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:TestScripts.ProductDetailTest@6e2eef]" name="initializeTestBaseSetup" is-config="true" duration-ms="6326" started-at="2020-07-14T14:19:13Z" finished-at="2020-07-14T14:19:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://qa-minerva:minerva@par.minerva.vn/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestScripts.ProductDetailTest@6e2eef]" name="setUp" is-config="true" duration-ms="2163" started-at="2020-07-14T14:19:19Z" finished-at="2020-07-14T14:19:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verify_ProdDetailCaption()[pri:0, instance:TestScripts.ProductDetailTest@6e2eef]" name="verify_ProdDetailCaption" duration-ms="128" started-at="2020-07-14T14:19:21Z" finished-at="2020-07-14T14:19:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ProdDetailCaption -->
+        <test-method status="PASS" signature="verify_ProductName()[pri:0, instance:TestScripts.ProductDetailTest@6e2eef]" name="verify_ProductName" duration-ms="138" started-at="2020-07-14T14:20:06Z" finished-at="2020-07-14T14:20:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ProductName -->
+        <test-method status="FAIL" signature="verify_ProductPrice()[pri:0, instance:TestScripts.ProductDetailTest@6e2eef]" name="verify_ProductPrice" duration-ms="127" started-at="2020-07-14T14:20:06Z" finished-at="2020-07-14T14:20:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Product price is not equal with selected one expected [$66] but found [$ 59.6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Product price is not equal with selected one expected [$66] but found [$ 59.6]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at TestScripts.ProductDetailTest.verify_ProductPrice(ProductDetailTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ProductPrice -->
+        <test-method status="FAIL" signature="verify_ProductRating()[pri:0, instance:TestScripts.ProductDetailTest@6e2eef]" name="verify_ProductRating" duration-ms="22" started-at="2020-07-14T14:20:07Z" finished-at="2020-07-14T14:20:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Product rating is not equal with selected one expected [3] but found [6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Product rating is not equal with selected one expected [3] but found [6]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at TestScripts.ProductDetailTest.verify_ProductRating(ProductDetailTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ProductRating -->
+        <test-method status="FAIL" signature="verify_ProductReview()[pri:0, instance:TestScripts.ProductDetailTest@6e2eef]" name="verify_ProductReview" duration-ms="120" started-at="2020-07-14T14:20:07Z" finished-at="2020-07-14T14:20:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Product review is not equal with selected one expected [12 reviews] but found [22 reviews]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Product review is not equal with selected one expected [12 reviews] but found [22 reviews]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at TestScripts.ProductDetailTest.verify_ProductReview(ProductDetailTest.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ProductReview -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestScripts.ProductDetailTest@6e2eef]" name="closeBrowser" is-config="true" duration-ms="3505" started-at="2020-07-14T14:20:07Z" finished-at="2020-07-14T14:20:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestScripts.ProductDetailTest -->
+      <class name="TestScripts.Checkout.CheckOutSuccessful_AllFields">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:TestScripts.Checkout.CheckOutSuccessful_AllFields@1a03464]" name="initializeTestBaseSetup" is-config="true" duration-ms="7809" started-at="2020-07-14T14:19:32Z" finished-at="2020-07-14T14:19:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://qa-minerva:minerva@par.minerva.vn/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestScripts.Checkout.CheckOutSuccessful_AllFields@1a03464]" name="setUp" is-config="true" duration-ms="2913" started-at="2020-07-14T14:19:40Z" finished-at="2020-07-14T14:19:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verify_SubmitSuccessfully_AllofFields()[pri:0, instance:TestScripts.Checkout.CheckOutSuccessful_AllFields@1a03464]" name="verify_SubmitSuccessfully_AllofFields" duration-ms="2500" started-at="2020-07-14T14:19:43Z" finished-at="2020-07-14T14:19:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_SubmitSuccessfully_AllofFields -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestScripts.Checkout.CheckOutSuccessful_AllFields@1a03464]" name="closeBrowser" is-config="true" duration-ms="4060" started-at="2020-07-14T14:19:46Z" finished-at="2020-07-14T14:19:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestScripts.Checkout.CheckOutSuccessful_AllFields -->
+      <class name="TestScripts.HomeTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:TestScripts.HomeTest@1f2a3a5]" name="initializeTestBaseSetup" is-config="true" duration-ms="8763" started-at="2020-07-14T14:19:00Z" finished-at="2020-07-14T14:19:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://qa-minerva:minerva@par.minerva.vn/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestScripts.HomeTest@1f2a3a5]" name="setUp" is-config="true" duration-ms="5" started-at="2020-07-14T14:19:08Z" finished-at="2020-07-14T14:19:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verify_HomePageTitle()[pri:0, instance:TestScripts.HomeTest@1f2a3a5]" name="verify_HomePageTitle" duration-ms="18" started-at="2020-07-14T14:19:08Z" finished-at="2020-07-14T14:19:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_HomePageTitle -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestScripts.HomeTest@1f2a3a5]" name="closeBrowser" is-config="true" duration-ms="4116" started-at="2020-07-14T14:19:09Z" finished-at="2020-07-14T14:19:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:TestScripts.HomeTest@1f2a3a5]" name="quitBrowser" is-config="true" duration-ms="2000" started-at="2020-07-14T14:20:35Z" finished-at="2020-07-14T14:20:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- TestScripts.HomeTest -->
+      <class name="TestScripts.Checkout.CheckOutTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:TestScripts.Checkout.CheckOutTest@137cf78]" name="initializeTestBaseSetup" is-config="true" duration-ms="8522" started-at="2020-07-14T14:19:21Z" finished-at="2020-07-14T14:19:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://qa-minerva:minerva@par.minerva.vn/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestScripts.Checkout.CheckOutTest@137cf78]" name="setUp" is-config="true" duration-ms="2422" started-at="2020-07-14T14:19:30Z" finished-at="2020-07-14T14:19:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verify_CheckOutCaption()[pri:0, instance:TestScripts.Checkout.CheckOutTest@137cf78]" name="verify_CheckOutCaption" duration-ms="126" started-at="2020-07-14T14:19:32Z" finished-at="2020-07-14T14:19:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_CheckOutCaption -->
+        <test-method status="PASS" signature="verify_ErrorMsg_WithoutRequiredFields()[pri:0, instance:TestScripts.Checkout.CheckOutTest@137cf78]" name="verify_ErrorMsg_WithoutRequiredFields" duration-ms="5082" started-at="2020-07-14T14:20:10Z" finished-at="2020-07-14T14:20:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ErrorMsg_WithoutRequiredFields -->
+        <test-method status="FAIL" signature="verify_ProductInforBeforeSubmit()[pri:0, instance:TestScripts.Checkout.CheckOutTest@137cf78]" name="verify_ProductInforBeforeSubmit" duration-ms="109" started-at="2020-07-14T14:20:15Z" finished-at="2020-07-14T14:20:15Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Product name is different selected one expected [Product 1] but found [Product]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Product name is different selected one expected [Product 1] but found [Product]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at TestScripts.Checkout.CheckOutTest.verify_ProductInforBeforeSubmit(CheckOutTest.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ProductInforBeforeSubmit -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestScripts.Checkout.CheckOutTest@137cf78]" name="closeBrowser" is-config="true" duration-ms="3735" started-at="2020-07-14T14:20:15Z" finished-at="2020-07-14T14:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestScripts.Checkout.CheckOutTest -->
+      <class name="TestScripts.InformationTest">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:TestScripts.InformationTest@1b6d4ae]" name="initializeTestBaseSetup" is-config="true" duration-ms="6896" started-at="2020-07-14T14:20:19Z" finished-at="2020-07-14T14:20:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://qa-minerva:minerva@par.minerva.vn/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestScripts.InformationTest@1b6d4ae]" name="setUp" is-config="true" duration-ms="2415" started-at="2020-07-14T14:20:26Z" finished-at="2020-07-14T14:20:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verify_CustomerInfor()[pri:0, instance:TestScripts.InformationTest@1b6d4ae]" name="verify_CustomerInfor" duration-ms="2483" started-at="2020-07-14T14:20:28Z" finished-at="2020-07-14T14:20:31Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Note is not the same expected [Test 2020] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Note is not the same expected [Test 2020] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at TestScripts.InformationTest.verify_CustomerInfor(InformationTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_CustomerInfor -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestScripts.InformationTest@1b6d4ae]" name="closeBrowser" is-config="true" duration-ms="4094" started-at="2020-07-14T14:20:31Z" finished-at="2020-07-14T14:20:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestScripts.InformationTest -->
+      <class name="TestScripts.Checkout.CheckOutSuccessful_OnlyReruiredFields">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:TestScripts.Checkout.CheckOutSuccessful_OnlyReruiredFields@b7bfc0]" name="initializeTestBaseSetup" is-config="true" duration-ms="7544" started-at="2020-07-14T14:19:50Z" finished-at="2020-07-14T14:19:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://qa-minerva:minerva@par.minerva.vn/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestScripts.Checkout.CheckOutSuccessful_OnlyReruiredFields@b7bfc0]" name="setUp" is-config="true" duration-ms="3545" started-at="2020-07-14T14:19:57Z" finished-at="2020-07-14T14:20:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verify_SubmitSuccessfully_AllofFields()[pri:0, instance:TestScripts.Checkout.CheckOutSuccessful_OnlyReruiredFields@b7bfc0]" name="verify_SubmitSuccessfully_AllofFields" duration-ms="1727" started-at="2020-07-14T14:20:01Z" finished-at="2020-07-14T14:20:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_SubmitSuccessfully_AllofFields -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:TestScripts.Checkout.CheckOutSuccessful_OnlyReruiredFields@b7bfc0]" name="closeBrowser" is-config="true" duration-ms="3853" started-at="2020-07-14T14:20:02Z" finished-at="2020-07-14T14:20:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestScripts.Checkout.CheckOutSuccessful_OnlyReruiredFields -->
+    </test> <!-- System test -->
+  </suite> <!-- Par suite -->
+</testng-results>
